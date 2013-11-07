@@ -1,0 +1,143 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+nav
+    {
+      background-color:#252525;
+      border-bottom: 1px solid #fff;
+      color:green;
+      min-width:800px;
+      height:20px;
+      padding:10px 20px;
+      text-align: right;
+    }
+
+nav a
+    {
+      font-size:14px;
+      font-variant: small-caps;
+      height:20px;
+      padding:12px 10px;
+      color:#fff;
+      text-decoration: none;
+      font-family: "Verdana", Geneva, serif;
+    }
+nav a:hover
+    {
+    color:pink;
+    overflow:hidden;
+    }
+
+
+#header
+{
+	color:pink;
+	background-color:#000000;
+	font-weight: bold;
+	font-family: "Verdana", Geneva, serif;
+	font-size: 40px;
+	padding: 5px;
+	height: 300px;
+}
+
+#optin_area
+{
+	color: #fff;
+	height:50px;
+	background-color:#3cb878;
+	padding: 18px 0 11px;
+}
+
+
+#footer
+{
+	color:pink;
+	background-color:#252525;
+	font-family: "Verdana", Geneva, serif;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	font-variant: small-caps;
+}
+
+/***********************************
+*      Headings                     *
+************************************/
+
+h1 {
+	color: #333333;
+	font-size: 2.2em;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: -1.4px;
+	line-height: 1.4;
+	text-transform: none;
+	margin: 4px 0px 4px 0px;
+	padding: 4px 0px 4px 0px;
+	}
+h2 {
+	color: #333333;
+	font-size: 2em;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: -1.2px;
+	line-height: 1.4;
+	text-transform: none;
+	margin: 4px 0px 4px 0px;
+	padding: 4px 0px 4px 0px;
+	}
+h3 {
+	color: #333333;
+	font-size: 1.8em;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: -0.8px;
+	line-height: 1.6;
+	text-transform: none;
+	margin: 4px 0px 4px 0px;
+	padding: 4px 0px 4px 0px;
+	}
+h4 {
+	color: #333333;
+	font-size: 1.6em;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	line-height: 1.6;
+	margin: 4px 0px 4px 0px;
+	padding: 4px 0px 4px 0px;
+	}
+h5 {
+	color: #333333;
+	font-size: 1.4em;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	line-height: 1.6;
+	margin: 4px 0px 4px 0px;
+	padding: 4px 0px 4px 0px;
+	}
+h6 {
+	color: #333333;
+	font-size: 1.2em;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	line-height: 1.6;
+	margin: 4px 0px 4px 0px;
+	padding: 4px 0px 4px 0px;
+	border-bottom: 1px solid rgba(0, 0, 0, .12);
+	}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Favorite Blog</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+
+<body>
+	<nav class="full_width">
+		<%= link_to "About Us", about_us_path %>
+		<a href="/contact_us">Contact Us</a>
+		<%= link_to "Our Team", our_team_path %>
+		<%= link_to "Blogs", blogs_path %>
+	</nav>
+
+	<div id="header" align="center">
+		<h3>Put header image here</h3>
+	</div>
+
+	<div id="optin_area">
+		Put optin bar here
+ 	</div>
+
+<%= yield %>
+
+<div id="footer">
+	Copyright 2013
+	<a href="/tos">Terms of Service</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<div style="margin:30px 0px 30px 0px">
+	Tags: <% @blog.tags.each do |tag| %>
+		<span style="background-color:aqua;padding:2px"><%= tag.title %></span>
+	<% end %>
+</div>
+<p>
+  <strong>Title:</strong>
+  <%= @blog.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @blog.content %>
+</p>
+
+<div style="padding:20px;background-color:yellow">
+	<h5>Comments:</h5><br>
+	<% @comments.each do |comment| %>
+	<%= comment.name %> -
+	<%= comment.content %>
+	<br/>
+	<% end %>
+</div>
+
+
+<%= link_to 'Add a comment', new_comment_path(:blog_id => @blog.id) %>
+<br/>
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>

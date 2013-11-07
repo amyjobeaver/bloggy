@@ -1,0 +1,38 @@
+<h5>Tags: </h5> 
+  <% @tags.each do |tag| %>
+  <%= link_to tag.title, blogs_path(title: tag.title), :class => "tag-box" %>
+  <% end %>
+<hr/>
+
+
+  <h1>My Blogs</h1>
+    <% @blogs.each do |blog| %>
+      <div>
+        <h2><%= blog.title %></h2>
+        <div>
+          <% blog.tags.each do |tag| %>
+          <%= link_to tag.title, blogs_path(title:tag.title), :class => "tag-box" %>
+          <% end %>
+        </div>
+
+        <div class="blog-title">
+            Posted <%= time_ago_in_words(blog.created_at) %> ago
+        </div>
+        <div class="blog-content">
+          <%= blog.content%>
+        </div>
+
+      <div class="blog-control">
+        <%= link_to 'Show', blog %>
+        <%= link_to 'Edit', edit_blog_path(blog) %>
+        <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+    <br>
+    <hr/>
+    <% end %>
+  
+
+<br>
+
+<%= link_to 'New Blog', new_blog_path %>
