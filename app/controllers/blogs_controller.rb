@@ -4,7 +4,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-   @tags = Tag.select(:title).uniq
+   @tags = Tag.select(:title).uniq 
 
     if params[:title].blank?
      @blogs = Blog.order('id desc')
